@@ -5,3 +5,92 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    height: 500px;
+    width: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+
+    transition: width 0.3s, height 0.3s;
+}
+
+#login > #img {
+    display: block;
+    background: #5f2c82 url(../imagens/img-form.jpg) no-repeat; 
+    height: 200px;
+    background-size: cover;
+    
+    
+}
+
+#formulario {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 1em;
+}
+
+h1 {
+    padding: 10px;
+}
+
+a.registre-se {
+    color: black;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    font-size: 1em;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0px 10px 0px;
+    background-color: #d2bfdf;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+input[type=submit]:hover {
+    background-color: #5f2c82;
+    color: #d2bfdf;
+    transition-duration: 0.5s;
+}
+
+
+.campo {
+    margin-top: 10px;
+}
+
+input[type=email]:focus {
+    background-color: #eee8f3;
+}
+
+input[type=password]:focus {
+    background-color: #eee8f3;
+}
